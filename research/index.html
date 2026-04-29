@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研究内容 | 野﨑 優晴</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .page-hero {
+      padding: 72px 22px 48px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .page-hero-en {
+      font-family: var(--ff-en);
+      font-weight: 300;
+      font-style: italic;
+      font-size: 2.8rem;
+      color: var(--green-lt);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      display: block;
+    }
+    .page-hero-jp {
+      font-family: var(--ff-jp);
+      font-weight: 300;
+      font-size: 1.3rem;
+      letter-spacing: 0.14em;
+      color: var(--ink);
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* ── Research intro ── */
+    .research-section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+    .research-theme {
+      font-family: var(--ff-jp);
+      font-weight: 400;
+      font-size: 1.15rem;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .research-body p {
+      font-size: 0.9rem;
+      color: var(--ink-mid);
+      font-weight: 300;
+      line-height: 2.1;
+      margin-bottom: 22px;
+      text-align: justify;
+      text-align-last: left;
+    }
+    .research-body p:last-child { margin-bottom: 0; }
+
+    /* ── Illustration ── */
+    .illust-wrap {
+      margin: 36px auto 28px;
+      display: flex;
+      justify-content: center;
+    }
+    .illust-img {
+      width: 62%;
+      max-width: 240px;
+      mix-blend-mode: multiply;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    /* ── Pull quote ── */
+    .pull-quote {
+      margin: 36px 0;
+      padding: 22px 20px 22px 28px;
+      border-left: 2px solid var(--green-mid);
+      background: var(--bg-card);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .pull-quote p {
+      font-family: var(--ff-jp);
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 2;
+      margin: 0 !important;
+    }
+
+    /* ── Papers & presentations ── */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .pub-item {
+      padding: 18px 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .pub-meta {
+      font-family: var(--ff-en);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .pub-title {
+      font-size: 0.86rem;
+      color: var(--ink);
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .pub-journal {
+      margin-top: 6px;
+      font-size: 0.76rem;
+      color: var(--ink-lt);
+      font-style: italic;
+    }
+
+    /* ── Thesis ── */
+    .thesis-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .thesis-item {
+      padding: 16px 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.86rem;
+      color: var(--ink);
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .thesis-label {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      font-family: var(--ff-en);
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="../index.html" class="nav-logo">Y. Nozaki</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">トップ</a></li>
+    <li><a href="../career/index.html">経歴</a></li>
+    <li><a href="../research/index.html" class="active">研究</a></li>
+    <li><a href="../links/index.html">リンク</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="page">
+
+  <div class="page-hero reveal">
+    <span class="page-hero-en">Research</span>
+    <span class="page-hero-jp">研究内容</span>
+  </div>
+
+  <!-- Theme intro -->
+  <section class="research-section reveal">
+    <div class="research-theme">— ものを探すということ —</div>
+    <div class="research-body">
+      <p>靴を探してください。こう言われたときに、空を見上げる人はあまりいませんよね。私たちは1日の中で、何度も何かを探しながら生活をしています。家を出る前に鍵を探す、人混みから待ち合わせている友達を探す、レストランのメニューの中から食べたいものを探す——全て何気ない行動ですが、その全てに人間ならではの癖があります。</p>
+
+      <div class="pull-quote">
+        <p>靴を探すときに自然と下方向を見てしまうのは、「靴は床の近くにあるものだ」という経験から形成された知識があるからです。また、鍵を探すときには前回どこに置いたかという記憶を手がかりにするでしょう。このように、人間の探索行動には、過去の経験から形成された知識や記憶が深く関わっています。</p>
+      </div>
+
+      <div class="illust-wrap">
+        <img src="../assets/illust-search-transparent.png" alt="ものを探している様子のイラスト" class="illust-img">
+      </div>
+
+      <p>視覚的な場面の中から目標を探すこのような行動を、特に視覚探索（しかくたんさく）と呼びます。この「人間らしい探し方」の巧みさは、ロボットと比べるとよくわかります。災害現場など人が立ち入れない危険な場所では、ロボットが探索を担うことがあります。従来のロボットは空間を網羅的にスキャンするように動作しますが、人間は「この辺にあるはずだ」と当たりをつけ、効率よく目標に辿り着くことができます。この「当たりをつける」能力の背後には記憶や経験則が関与していますが、そのメカニズムにはまだ解明されていない部分が多く残っています。</p>
+
+      <p>視覚探索の研究は、こうした基礎的な問いにとどまらず、様々な場面への応用が期待されています。「人が何に注意を向けやすいか」という知見は、広告・パッケージなどのデザインに活かされており、自動運転システムの開発や、教材・教室環境のデザインといった教育分野にも応用されています。</p>
+
+      <p>私はこの視覚探索と記憶の関係や性質について、視線測定やVRを用いた行動実験によってデータを収集し、その背後にある脳の情報処理過程を数理モデルで記述・推定することで研究を行っています。</p>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- 論文 -->
+  <section class="research-section reveal">
+    <span class="section-label">論文</span>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-title">野﨑優晴 (2022). 中学校理科における認知欲求が仮説設定へ及ぼす影響の解析. 教育デザイン研究, 14(3), 29-30</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- 学会発表 -->
+  <section class="research-section reveal">
+    <span class="section-label">学会発表</span>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-title">野﨑優晴・関口貴裕 (2025). 制限視野での探索における動作と効果の一致が探索空間の表象に及ぼす影響. 日本基礎心理学会 第44回大会</div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-title">野﨑優晴・平島由美子 (2022). 中学校理科における認知欲求が仮説設定へ及ぼす影響の解析. 日本理科教育学会 第61回関東支部大会</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- 学位論文 -->
+  <section class="research-section reveal" style="padding-bottom: 80px;">
+    <span class="section-label">学位論文</span>
+    <div class="thesis-list">
+      <div class="thesis-item">
+        「考察場面における仮説検証を促す指導方略の検討」横浜国立大学 教職大学院 学校課題解決研究
+      </div>
+      <div class="thesis-item">
+        「多体ニューロン系における可塑性及び外部摂動による同期現象の増強と抑制」北里大学理学部物理学科 卒業研究
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © 2026 Yusei Nozaki. All rights reserved.
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Hamburger menu
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
