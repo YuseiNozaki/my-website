@@ -145,7 +145,7 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   gap: 10px;
   font-family: var(--ff-en);
-  font-size: 0.7rem;
+  font-size: 0.88rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--green-mid);
@@ -220,7 +220,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--ff-en);
   font-weight: 300;
   font-style: italic;
-  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   letter-spacing: 0.22em;
   color: var(--green-mid);
   display: block;
@@ -445,7 +445,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 300;
   font-style: italic;
   font-size: 2.8rem;
-  color: var(--green-lt);
+  color: var(--green-mid);
   letter-spacing: 0.04em;
   line-height: 1;
   display: block;
@@ -498,7 +498,7 @@ a { color: inherit; text-decoration: none; }
 .timeline-item:last-child { padding-bottom: 0; }
 .timeline-date {
   font-family: var(--ff-en);
-  font-size: 0.72rem;
+  font-size: 0.84rem;
   letter-spacing: 0.1em;
   color: var(--green-mid);
   font-weight: 400;
