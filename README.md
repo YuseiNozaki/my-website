@@ -1,4 +1,4 @@
-# 野﨑 優晴 | Yusei Nozaki — Personal Website
+# Personal Website
 
 個人サイトのソースコードです。
 
