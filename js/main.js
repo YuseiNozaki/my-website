@@ -1,3 +1,14 @@
+// Redirect index.html variants to canonical directory URLs.
+(function() {
+  if (!/^https?:$/.test(window.location.protocol)) return;
+
+  const path = window.location.pathname;
+  if (!path.endsWith('/index.html')) return;
+
+  const canonicalPath = path.slice(0, -'index.html'.length) || '/';
+  window.location.replace(canonicalPath + window.location.search + window.location.hash);
+})();
+
 // Email reveal (anti-spam)
 (function() {
   const el = document.getElementById('email-display');
