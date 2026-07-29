@@ -12,7 +12,7 @@ my-website/
 ├── img/              # 画像
 ├── career/           # 経歴ページ
 ├── research/         # 研究ページ
-└── links/            # リンク集
+└── links/            # 関連サイト
 ```
 
 ## 技術スタック
