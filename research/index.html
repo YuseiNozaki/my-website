@@ -21,32 +21,35 @@
   <meta name="twitter:image" content="https://yusei-nozaki.jp/img/IMG_9286.jpeg">
   <link rel="canonical" href="https://yusei-nozaki.jp/research/">
   <link rel="icon" href="../img/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <a href="/" class="nav-logo">Yusei Nozaki</a>
-  <ul class="nav-links">
-    <li><a href="/">トップ</a></li>
-    <li><a href="/career/">経歴</a></li>
-    <li><a href="/research/" class="active">研究</a></li>
-    <li><a href="/links/">関連サイト</a></li>
-  </ul>
-  <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
-    <span></span><span></span><span></span>
+<nav class="navbar fixed-top site-nav" aria-label="メインナビゲーション">
+  <a href="/" class="navbar-brand nav-logo">Yusei Nozaki</a>
+  <button class="navbar-toggler nav-hamburger collapsed" id="nav-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="メニュー">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
   </button>
+  <div class="collapse navbar-collapse nav-menu" id="nav-menu">
+    <ul class="navbar-nav nav-links">
+      <li class="nav-item"><a href="/" class="nav-link">トップ</a></li>
+      <li class="nav-item"><a href="/career/" class="nav-link">経歴</a></li>
+      <li class="nav-item"><a href="/research/" class="nav-link active" aria-current="page">研究</a></li>
+      <li class="nav-item"><a href="/links/" class="nav-link">関連サイト</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="page">
 
-  <div class="page-hero reveal">
+  <div class="container page-hero reveal">
     <span class="page-hero-en">Research</span>
     <span class="page-hero-jp">研究内容</span>
   </div>
 
   <!-- Theme intro -->
-  <section class="research-section reveal">
+  <section class="container research-section reveal">
     <div class="research-theme">— ものを探すということ —</div>
     <div class="research-body">
       <p>靴を探してください。こう言われたときに、空を見上げる人はあまりいませんよね。私たちは1日の中で、何度も何かを探しながら生活をしています。家を出る前に鍵を探す、人混みから待ち合わせている友達を探す、レストランのメニューの中から食べたいものを探す——全て何気ない行動ですが、その全てに人間ならではの癖があります。</p>
@@ -55,7 +58,7 @@
         <p>靴を探すときに自然と下方向を見てしまうのは、「靴は床の近くにあるものだ」という経験から形成された知識があるからです。また、鍵を探すときには前回どこに置いたかという記憶を手がかりにするでしょう。このように、人間の探索行動には、過去の経験から形成された知識や記憶が深く関わっています。</p>
       </div>
 
-      <div class="illust-wrap">
+      <div class="illust-wrap d-flex justify-content-center">
         <img src="../img/illust-search-transparent.png" alt="ものを探している様子のイラスト" class="illust-img">
       </div>
 
@@ -70,10 +73,10 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 論文 -->
-  <section class="research-section reveal">
+  <section class="container research-section reveal">
     <span class="section-label">論文</span>
-    <div class="pub-list">
-      <div class="pub-item">
+    <div class="pub-list d-flex flex-column">
+      <div class="card pub-item">
         <div class="pub-title">野﨑優晴 (2023). 中学校理科における認知欲求が仮説設定へ及ぼす影響の解析. 教育デザイン研究, 14(3), 29-30</div>
       </div>
     </div>
@@ -82,13 +85,13 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 学会発表 -->
-  <section class="research-section reveal">
+  <section class="container research-section reveal">
     <span class="section-label">学会発表</span>
-    <div class="pub-list">
-      <div class="pub-item">
+    <div class="pub-list d-flex flex-column">
+      <div class="card pub-item">
         <div class="pub-title">野﨑優晴・関口貴裕 (2025). 制限視野での探索における動作と効果の一致が探索空間の表象に及ぼす影響. 日本基礎心理学会 第44回大会</div>
       </div>
-      <div class="pub-item">
+      <div class="card pub-item">
         <div class="pub-title">野﨑優晴・平島由美子 (2022). 中学校理科における認知欲求が仮説設定へ及ぼす影響の解析. 日本理科教育学会 第61回関東支部大会</div>
       </div>
     </div>
@@ -97,13 +100,13 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 学位論文 -->
-  <section class="research-section reveal" style="padding-bottom: 80px;">
+  <section class="container research-section reveal section-end">
     <span class="section-label">学位論文</span>
-    <div class="thesis-list">
-      <div class="thesis-item">
+    <div class="thesis-list d-flex flex-column">
+      <div class="card thesis-item">
         「考察場面における仮説検証を促す指導方略の検討」横浜国立大学 教職大学院 学校課題解決研究
       </div>
-      <div class="thesis-item">
+      <div class="card thesis-item">
         「多体ニューロン系における可塑性及び外部摂動による同期現象の増強と抑制」北里大学理学部物理学科 卒業研究
       </div>
     </div>
@@ -115,6 +118,7 @@
   © 2026 Yusei Nozaki. All rights reserved.
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
 
 </body>

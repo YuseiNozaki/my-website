@@ -21,6 +21,7 @@
   <meta name="twitter:image" content="https://yusei-nozaki.jp/img/IMG_9286.jpeg">
   <link rel="canonical" href="https://yusei-nozaki.jp/">
   <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {
@@ -57,49 +58,53 @@
 <body>
 
 <!-- Nav -->
-<nav class="site-nav">
-  <a href="/" class="nav-logo">Yusei Nozaki</a>
-  <ul class="nav-links">
-    <li><a href="/" class="active">トップ</a></li>
-    <li><a href="/career/">経歴</a></li>
-    <li><a href="/research/">研究</a></li>
-    <li><a href="/links/">関連サイト</a></li>
-  </ul>
-  <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
-    <span></span><span></span><span></span>
+<nav class="navbar fixed-top site-nav" aria-label="メインナビゲーション">
+  <a href="/" class="navbar-brand nav-logo">Yusei Nozaki</a>
+  <button class="navbar-toggler nav-hamburger collapsed" id="nav-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="メニュー">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
   </button>
+  <div class="collapse navbar-collapse nav-menu" id="nav-menu">
+    <ul class="navbar-nav nav-links">
+      <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">トップ</a></li>
+      <li class="nav-item"><a href="/career/" class="nav-link">経歴</a></li>
+      <li class="nav-item"><a href="/research/" class="nav-link">研究</a></li>
+      <li class="nav-item"><a href="/links/" class="nav-link">関連サイト</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="page">
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-text-col">
-      <span class="hero-name-en">Yusei Nozaki</span>
-      <span class="hero-name-jp">野﨑 優晴</span>
-      <div class="hero-divider"></div>
-      <div class="hero-titles">
-        <span class="hero-title">東京学芸大学大学院 連合学校教育学研究科 博士課程</span>
-        <span class="hero-title">株式会社ルーツ 取締役（CTO）</span>
+  <section class="container hero">
+    <div class="row g-0 align-items-center hero-layout">
+      <div class="col hero-text-col d-flex flex-column">
+        <span class="hero-name-en">Yusei Nozaki</span>
+        <span class="hero-name-jp">野﨑 優晴</span>
+        <div class="hero-divider"></div>
+        <div class="hero-titles d-flex flex-column">
+          <span class="hero-title">東京学芸大学大学院 連合学校教育学研究科 博士課程</span>
+          <span class="hero-title">株式会社ルーツ 取締役（CTO）</span>
+        </div>
       </div>
-    </div>
-    <div class="hero-photo-col">
-      <div class="hero-photo-wrap">
-        <img src="img/IMG_9286.jpeg" alt="野﨑優晴（野崎優晴 / Yusei Nozaki）" class="hero-photo">
+      <div class="col-auto hero-photo-col">
+        <div class="hero-photo-wrap">
+          <img src="img/IMG_9286.jpeg" alt="野﨑優晴（野崎優晴 / Yusei Nozaki）" class="hero-photo">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Bio -->
-  <section class="bio-section reveal">
+  <section class="container bio-section reveal">
     <span class="section-label">About</span>
     <p class="bio-text">私の専門は認知心理学です。東京学芸大学にて、人間がものを探すときの視覚や記憶のはたらきについて研究しています。また、株式会社ルーツでは取締役として経営やシステム開発に携わるほか、家庭教師のネクスタを創業し、代表として事業を運営しています。</p>
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:28px;">
-      <a href="/research/" class="bio-cta" style="margin-top:0;">
+    <div class="bio-actions d-flex flex-column align-items-start">
+      <a href="/research/" class="btn rounded-pill d-inline-flex align-items-center bio-cta">
         詳しい研究内容はこちら
         <span class="bio-cta-arrow">→</span>
       </a>
-      <a href="/career/" class="bio-cta" style="margin-top:0;background:transparent;color:var(--green);border:1px solid var(--green);">
+      <a href="/career/" class="btn rounded-pill d-inline-flex align-items-center bio-cta bio-cta-outline">
         経歴はこちら
         <span class="bio-cta-arrow">→</span>
       </a>
@@ -109,42 +114,42 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- Hobbies -->
-  <section class="hobbies-section reveal">
+  <section class="container hobbies-section reveal">
     <span class="section-label">趣味</span>
-    <div class="hobby-chips">
-      <span class="hobby-chip">盆栽</span>
-      <span class="hobby-chip">テニス</span>
-      <span class="hobby-chip">コーヒー豆の焙煎</span>
-      <span class="hobby-chip">チェス</span>
-      <span class="hobby-chip">マラソン</span>
-      <span class="hobby-chip">ジビエのお店巡り</span>
+    <div class="hobby-chips d-flex flex-wrap gap-2">
+      <span class="badge rounded-pill hobby-chip">盆栽</span>
+      <span class="badge rounded-pill hobby-chip">テニス</span>
+      <span class="badge rounded-pill hobby-chip">コーヒー豆の焙煎</span>
+      <span class="badge rounded-pill hobby-chip">チェス</span>
+      <span class="badge rounded-pill hobby-chip">マラソン</span>
+      <span class="badge rounded-pill hobby-chip">ジビエのお店巡り</span>
     </div>
   </section>
 
   <div class="container"><div class="divider"></div></div>
 
   <!-- Related Sites -->
-  <section class="hobbies-section reveal">
+  <section class="container hobbies-section reveal">
     <span class="section-label">関連サイト</span>
-    <div style="display:flex;flex-direction:column;gap:10px;">
-      <a href="https://researchmap.jp/yusei_nozaki" target="_blank" rel="noopener" class="inline-link-card">
+    <div class="related-links d-flex flex-column">
+      <a href="https://researchmap.jp/yusei_nozaki" target="_blank" rel="noopener" class="card flex-row align-items-center inline-link-card">
         <span class="inline-link-name">researchmap</span>
-        <span class="inline-link-url">researchmap.jp/yusei_nozaki</span>
+        <span class="inline-link-url ms-auto">researchmap.jp/yusei_nozaki</span>
         <span class="inline-link-arrow">→</span>
       </a>
-      <a href="https://roots-official.jp" target="_blank" rel="noopener" class="inline-link-card">
+      <a href="https://roots-official.jp" target="_blank" rel="noopener" class="card flex-row align-items-center inline-link-card">
         <span class="inline-link-name">株式会社ルーツ</span>
-        <span class="inline-link-url">roots-official.jp</span>
+        <span class="inline-link-url ms-auto">roots-official.jp</span>
         <span class="inline-link-arrow">→</span>
       </a>
-      <a href="https://yokohama-study.com" target="_blank" rel="noopener" class="inline-link-card">
+      <a href="https://yokohama-study.com" target="_blank" rel="noopener" class="card flex-row align-items-center inline-link-card">
         <span class="inline-link-name">家庭教師のネクスタ</span>
-        <span class="inline-link-url">yokohama-study.com</span>
+        <span class="inline-link-url ms-auto">yokohama-study.com</span>
         <span class="inline-link-arrow">→</span>
       </a>
-      <a href="https://yokohama-softtennis.com" target="_blank" rel="noopener" class="inline-link-card">
+      <a href="https://yokohama-softtennis.com" target="_blank" rel="noopener" class="card flex-row align-items-center inline-link-card">
         <span class="inline-link-name">ソフトテニススクール Nexus</span>
-        <span class="inline-link-url">yokohama-softtennis.com</span>
+        <span class="inline-link-url ms-auto">yokohama-softtennis.com</span>
         <span class="inline-link-arrow">→</span>
       </a>
     </div>
@@ -153,10 +158,10 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- Contact -->
-  <section class="contact-section reveal">
+  <section class="container contact-section reveal">
     <span class="section-label">連絡先</span>
-    <div class="contact-email-wrap">
-      <div class="contact-email-icon">
+    <div class="card flex-row align-items-center contact-email-wrap">
+      <div class="contact-email-icon d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle">
         <svg viewBox="0 0 20 20" fill="none" stroke="var(--green)" stroke-width="1.5">
           <rect x="2" y="5" width="16" height="11" rx="2"/>
           <path d="M2 7l8 5 8-5"/>
@@ -173,6 +178,7 @@
   © 2026 Yusei Nozaki. All rights reserved.
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 </body>

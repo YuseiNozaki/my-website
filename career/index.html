@@ -21,32 +21,35 @@
   <meta name="twitter:image" content="https://yusei-nozaki.jp/img/IMG_9286.jpeg">
   <link rel="canonical" href="https://yusei-nozaki.jp/career/">
   <link rel="icon" href="../img/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <a href="/" class="nav-logo">Yusei Nozaki</a>
-  <ul class="nav-links">
-    <li><a href="/">トップ</a></li>
-    <li><a href="/career/" class="active">経歴</a></li>
-    <li><a href="/research/">研究</a></li>
-    <li><a href="/links/">関連サイト</a></li>
-  </ul>
-  <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
-    <span></span><span></span><span></span>
+<nav class="navbar fixed-top site-nav" aria-label="メインナビゲーション">
+  <a href="/" class="navbar-brand nav-logo">Yusei Nozaki</a>
+  <button class="navbar-toggler nav-hamburger collapsed" id="nav-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="メニュー">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
   </button>
+  <div class="collapse navbar-collapse nav-menu" id="nav-menu">
+    <ul class="navbar-nav nav-links">
+      <li class="nav-item"><a href="/" class="nav-link">トップ</a></li>
+      <li class="nav-item"><a href="/career/" class="nav-link active" aria-current="page">経歴</a></li>
+      <li class="nav-item"><a href="/research/" class="nav-link">研究</a></li>
+      <li class="nav-item"><a href="/links/" class="nav-link">関連サイト</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="page">
 
-  <div class="page-hero reveal">
+  <div class="container page-hero reveal">
     <span class="page-hero-en">Career</span>
     <span class="page-hero-jp">経歴・資格等</span>
   </div>
 
   <!-- 職歴 -->
-  <section class="timeline-section reveal">
+  <section class="container timeline-section reveal">
     <span class="section-label">職歴</span>
     <div class="timeline">
       <div class="timeline-item">
@@ -83,7 +86,7 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 学歴 -->
-  <section class="timeline-section reveal">
+  <section class="container timeline-section reveal">
     <span class="section-label">学歴</span>
     <div class="timeline">
       <div class="timeline-item">
@@ -108,17 +111,17 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 学位 -->
-  <section class="timeline-section reveal">
+  <section class="container timeline-section reveal">
     <span class="section-label">学位</span>
-    <div class="tag-list">
-      <div class="tag-item">
+    <div class="tag-list d-flex flex-column">
+      <div class="card flex-row align-items-baseline tag-item">
         <div class="tag-dot"></div>
         <div>
           <div class="tag-main">教職修士（専門職）</div>
           <div class="tag-sub">横浜国立大学</div>
         </div>
       </div>
-      <div class="tag-item">
+      <div class="card flex-row align-items-baseline tag-item">
         <div class="tag-dot"></div>
         <div>
           <div class="tag-main">学士（理学）</div>
@@ -131,18 +134,18 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 所属学会 -->
-  <section class="timeline-section reveal">
+  <section class="container timeline-section reveal">
     <span class="section-label">所属学会</span>
-    <div class="tag-list">
-      <div class="tag-item">
+    <div class="tag-list d-flex flex-column">
+      <div class="card flex-row align-items-baseline tag-item">
         <div class="tag-dot"></div>
         <div class="tag-main">日本基礎心理学会</div>
       </div>
-      <div class="tag-item">
+      <div class="card flex-row align-items-baseline tag-item">
         <div class="tag-dot"></div>
         <div class="tag-main">日本認知心理学会</div>
       </div>
-      <div class="tag-item">
+      <div class="card flex-row align-items-baseline tag-item">
         <div class="tag-dot"></div>
         <div class="tag-main">日本理科教育学会</div>
       </div>
@@ -152,15 +155,15 @@
   <div class="container"><div class="divider"></div></div>
 
   <!-- 資格 -->
-  <section class="timeline-section reveal" style="padding-bottom: 80px;">
+  <section class="container timeline-section reveal section-end">
     <span class="section-label">資格等</span>
-    <div class="qual-list">
-      <div class="qual-item">高等学校教諭専修免許状（理科）</div>
-      <div class="qual-item">中学校教諭専修免許状（理科）</div>
-      <div class="qual-item">基本情報技術者</div>
-      <div class="qual-item">剣道二段</div>
-      <div class="qual-item">色彩検定 3級</div>
-      <div class="qual-item">料理検定 3級</div>
+    <div class="qual-list d-flex flex-column gap-2">
+      <div class="card flex-row align-items-center qual-item">高等学校教諭専修免許状（理科）</div>
+      <div class="card flex-row align-items-center qual-item">中学校教諭専修免許状（理科）</div>
+      <div class="card flex-row align-items-center qual-item">基本情報技術者</div>
+      <div class="card flex-row align-items-center qual-item">剣道二段</div>
+      <div class="card flex-row align-items-center qual-item">色彩検定 3級</div>
+      <div class="card flex-row align-items-center qual-item">料理検定 3級</div>
     </div>
   </section>
 
@@ -170,6 +173,7 @@
   © 2026 Yusei Nozaki. All rights reserved.
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
 
 </body>

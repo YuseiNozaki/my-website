@@ -34,18 +34,22 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Hamburger menu
+// Bootstrap Collapse owns the mobile menu and its aria-expanded state.
 const hamburger = document.getElementById('nav-hamburger');
-const navLinks = document.querySelector('.nav-links');
-if (hamburger) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
+const navMenu = document.getElementById('nav-menu');
+if (hamburger && navMenu && window.bootstrap) {
+  const menu = bootstrap.Collapse.getOrCreateInstance(navMenu, { toggle: false });
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => menu.hide());
   });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-    });
+  navMenu.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navMenu.classList.contains('show')) {
+      menu.hide();
+      hamburger.focus();
+    }
+  });
+  // Avoid reopening a stale mobile menu after resizing back from desktop.
+  window.matchMedia('(max-width: 520px)').addEventListener('change', event => {
+    if (!event.matches) menu.hide();
   });
 }
