@@ -117,6 +117,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Use the existing mobile menu below 640px so all five labels fit. */
 @media (min-width: 640.02px) {
+  .nav-logo { font-size: 1.2rem; }
+  .nav-links .nav-link { font-size: 0.9rem; font-weight: 400; }
   .site-nav .nav-menu { display: flex !important; flex-basis: auto; flex-grow: 0; }
   .site-nav .navbar-nav { flex-direction: row; }
 }
@@ -193,7 +195,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-lt);
   letter-spacing: 0.06em;
   border-top: 1px solid var(--border);
-  display: none;
 }
 
 /* ── Scroll reveal ── */
@@ -756,4 +757,16 @@ h2.section-label { font-weight: 400; }
 .philosophy-section h2 {
   padding-left: 16px;
   border-left: 2px solid var(--green-mid);
+}
+
+/* Respect the visitor's motion preference without hiding content. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero { animation: none; opacity: 1; }
+  .reveal { transition: none; transform: none; opacity: 1; }
+  .collapsing, .nav-hamburger span,
+  .nav-links .nav-link, .bio-cta, .bio-cta-arrow,
+  .inline-link-card, .inline-link-arrow, .link-card, .link-arrow {
+    transition: none;
+  }
 }

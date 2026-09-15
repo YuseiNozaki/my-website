@@ -16,11 +16,8 @@
   const u = 'yusei.9933';
   const d = 'gmail.com';
   el.textContent = u + '@' + d;
-  el.style.cursor = 'pointer';
   el.title = 'クリックでメーラーを開く';
-  el.addEventListener('click', function() {
-    window.location.href = 'mailto:' + u + '@' + d;
-  });
+  el.href = 'mailto:' + u + '@' + d;
 })();
 
 // Scroll reveal
