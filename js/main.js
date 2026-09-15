@@ -49,7 +49,7 @@ if (hamburger && navMenu && window.bootstrap) {
     }
   });
   // Avoid reopening a stale mobile menu after resizing back from desktop.
-  window.matchMedia('(max-width: 520px)').addEventListener('change', event => {
+  window.matchMedia('(max-width: 640px)').addEventListener('change', event => {
     if (!event.matches) menu.hide();
   });
 }

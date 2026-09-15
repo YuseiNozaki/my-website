@@ -115,12 +115,12 @@ a { color: inherit; text-decoration: none; }
 .nav-hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-/* Preserve the original 520px menu breakpoint with Bootstrap Collapse. */
-@media (min-width: 520.02px) {
+/* Use the existing mobile menu below 640px so all five labels fit. */
+@media (min-width: 640.02px) {
   .site-nav .nav-menu { display: flex !important; flex-basis: auto; flex-grow: 0; }
   .site-nav .navbar-nav { flex-direction: row; }
 }
-@media (max-width: 520px) {
+@media (max-width: 640px) {
   .nav-hamburger { display: flex; }
   .nav-menu {
     position: fixed;
@@ -694,3 +694,66 @@ a { color: inherit; text-decoration: none; }
 /* Exact spacing retained alongside Bootstrap utilities. */
 .related-links { gap: 10px; }
 .section-end { padding-bottom: 80px; }
+
+/* ── Page headings & philosophy: reuse the existing text width and palette ── */
+h1.page-hero-jp { margin-bottom: 0; }
+h2.section-label { font-weight: 400; }
+.philosophy-body p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2.1;
+  margin-bottom: 22px;
+  overflow-wrap: anywhere;
+}
+.philosophy-body h2 {
+  margin: 0 0 24px;
+  font-family: var(--ff-jp);
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--green);
+}
+.philosophy-body strong { font-weight: 500; }
+.philosophy-body p:last-child { margin-bottom: 0; }
+
+/* ── Breadcrumbs ── */
+.breadcrumbs { padding-top: 24px; }
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--ink-mid);
+}
+.breadcrumbs li + li::before {
+  content: '›';
+  margin-right: 8px;
+  color: var(--ink-lt);
+}
+.breadcrumbs a { color: var(--green); }
+.breadcrumbs a:hover { text-decoration: underline; }
+.breadcrumbs + .page-hero { padding-top: 28px; }
+
+/* Philosophy: an opening statement followed by four quiet, distinct sections. */
+.philosophy-body .philosophy-lead {
+  margin-bottom: 24px;
+  font-size: clamp(1.05rem, 3.8vw, 1.25rem);
+  font-weight: 400;
+  color: var(--green);
+  line-height: 1.9;
+}
+.philosophy-intro { padding-bottom: 8px; }
+.philosophy-section {
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border);
+}
+.philosophy-section h2 {
+  padding-left: 16px;
+  border-left: 2px solid var(--green-mid);
+}

@@ -23,6 +23,26 @@
   <link rel="icon" href="../img/icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://yusei-nozaki.jp/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "研究について",
+      "item": "https://yusei-nozaki.jp/research/"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -33,9 +53,10 @@
   </button>
   <div class="collapse navbar-collapse nav-menu" id="nav-menu">
     <ul class="navbar-nav nav-links">
-      <li class="nav-item"><a href="/" class="nav-link">トップ</a></li>
-      <li class="nav-item"><a href="/career/" class="nav-link">経歴</a></li>
-      <li class="nav-item"><a href="/research/" class="nav-link active" aria-current="page">研究</a></li>
+      <li class="nav-item"><a href="/" class="nav-link">ホーム</a></li>
+      <li class="nav-item"><a href="/career/" class="nav-link">経歴・資格等</a></li>
+      <li class="nav-item"><a href="/philosophy/" class="nav-link">理念</a></li>
+      <li class="nav-item"><a href="/research/" class="nav-link active" aria-current="page">研究について</a></li>
       <li class="nav-item"><a href="/links/" class="nav-link">関連サイト</a></li>
     </ul>
   </div>
@@ -43,12 +64,19 @@
 
 <main class="page">
 
+  <nav class="container breadcrumbs" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">研究について</li>
+    </ol>
+  </nav>
+
   <div class="container page-hero reveal">
     <span class="page-hero-en">Research</span>
     <span class="page-hero-jp">研究内容</span>
   </div>
 
-  <!-- Theme intro -->
+  <!-- 研究紹介：ここから紹介文とイラスト -->
   <section class="container research-section reveal">
     <div class="research-theme">— ものを探すということ —</div>
     <div class="research-body">
@@ -72,6 +100,7 @@
 
   <div class="container"><div class="divider"></div></div>
 
+  <!-- 業績一覧：ここから論文・学会発表・学位論文 -->
   <!-- 論文 -->
   <section class="container research-section reveal">
     <span class="section-label">論文</span>

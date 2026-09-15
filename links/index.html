@@ -23,6 +23,26 @@
   <link rel="icon" href="../img/icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://yusei-nozaki.jp/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "関連サイト",
+      "item": "https://yusei-nozaki.jp/links/"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -33,15 +53,23 @@
   </button>
   <div class="collapse navbar-collapse nav-menu" id="nav-menu">
     <ul class="navbar-nav nav-links">
-      <li class="nav-item"><a href="/" class="nav-link">トップ</a></li>
-      <li class="nav-item"><a href="/career/" class="nav-link">経歴</a></li>
-      <li class="nav-item"><a href="/research/" class="nav-link">研究</a></li>
+      <li class="nav-item"><a href="/" class="nav-link">ホーム</a></li>
+      <li class="nav-item"><a href="/career/" class="nav-link">経歴・資格等</a></li>
+      <li class="nav-item"><a href="/philosophy/" class="nav-link">理念</a></li>
+      <li class="nav-item"><a href="/research/" class="nav-link">研究について</a></li>
       <li class="nav-item"><a href="/links/" class="nav-link active" aria-current="page">関連サイト</a></li>
     </ul>
   </div>
 </nav>
 
 <main class="page">
+
+  <nav class="container breadcrumbs" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">関連サイト</li>
+    </ol>
+  </nav>
 
   <div class="container page-hero reveal">
     <span class="page-hero-en">Related Sites</span>
