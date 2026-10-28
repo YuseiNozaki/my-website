@@ -793,9 +793,9 @@ h2.section-label { font-weight: 400; }
 .breadcrumbs a:hover { text-decoration: underline; }
 .breadcrumbs + .page-hero { padding-top: 28px; }
 
-/* Philosophy: an opening statement, illustration, education, and research. */
+/* Philosophy: illustration, opening statement, education, and research. */
 .philosophy-intro { padding-bottom: 8px; }
-.philosophy-illustration { margin: 32px 0 0; }
+.philosophy-illustration { margin: 0 0 32px; }
 .philosophy-illustration img { width: 100%; height: auto; }
 .philosophy-body .philosophy-subtitle { font-size: 1rem; }
 .philosophy-section {
