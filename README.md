@@ -11,7 +11,7 @@ my-website/
 ├── js/main.js        # 共通スクリプト（スクロールアニメーション・Bootstrapメニュー補助・メール難読化）
 ├── img/              # 画像
 ├── profile/          # 経歴・資格等への転送
-├── philosophy/       # 理念（文章のみ）
+├── philosophy/       # 理念（本文・教育と研究のイラスト）
 ├── career/           # 経歴・資格等
 ├── research/         # 研究ページ
 └── links/            # 関連サイト

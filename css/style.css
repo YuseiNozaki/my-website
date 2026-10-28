@@ -793,15 +793,11 @@ h2.section-label { font-weight: 400; }
 .breadcrumbs a:hover { text-decoration: underline; }
 .breadcrumbs + .page-hero { padding-top: 28px; }
 
-/* Philosophy: an opening statement followed by four quiet, distinct sections. */
-.philosophy-body .philosophy-lead {
-  margin-bottom: 24px;
-  font-size: clamp(1.05rem, 3.8vw, 1.25rem);
-  font-weight: 400;
-  color: var(--green);
-  line-height: 1.9;
-}
+/* Philosophy: an opening statement, illustration, education, and research. */
 .philosophy-intro { padding-bottom: 8px; }
+.philosophy-illustration { margin: 32px 0 0; }
+.philosophy-illustration img { width: 100%; height: auto; }
+.philosophy-body .philosophy-subtitle { font-size: 1rem; }
 .philosophy-section {
   margin-top: 44px;
   padding-top: 36px;
